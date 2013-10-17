@@ -84,8 +84,9 @@ hr {
   padding: 0;
   margin: 0;
   border: 1px solid #222;
-  float: left;
+  position: absolute;
   width: 100%;
+  float: left;
 }
 .countdown li {
   width: 25%;
@@ -94,11 +95,55 @@ hr {
   text-align: center;
   float: left;
 }
+.social {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 0 1.0em 0;
+}
+/* Preload it */
+#preloader {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:#fff; /* change if the mask should have another color then white */
+  z-index:99; /* makes sure it stays on top */
+}
+#status {
+  width:200px;
+  height:40px;
+  text-align: center;
+  position:absolute;
+  left:50%; /* centers the loading animation horizontally one the screen */
+  top:50%; /* centers the loading animation vertically one the screen */
+  background-image:url(../img/status.gif); /* path to your loading animation */
+  background-repeat:no-repeat;
+  background-position:center;
+  margin:-20px 0 0 -100px; /* is width and height divided by two */
+}
 /* Mobile Version Babay */
 @media only screen and (max-device-width: 480px) {
+  body {
+    padding: 1.0em;
+    background-size: 100% auto;
+  }
   .hero {
-    width: 300px;
+    width: 100%;
     height: auto;
+    padding-top: 60px;
+    position: relative;
+    margin: 0;
+    top: 0;
+    left: 0;
+  }
+  .static {
+    display: none;
+  }
+  .countdown {
     position: absolute;
+    top: 0;
+    left: 0;
   }
 }
