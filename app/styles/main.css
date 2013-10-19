@@ -113,29 +113,31 @@ hr {
 .download p {
   margin: 0;
 }
-/* Preload it */
+/* Preload that shit */
 #preloader {
   position:absolute;
   top:0;
   left:0;
   right:0;
   bottom:0;
-  background-color:#fff; /* change if the mask should have another color then white */
-  z-index:99; /* makes sure it stays on top */
+  background-color:#fff; 
 }
 #status {
   width:200px;
   height:40px;
   text-align: center;
   position:absolute;
-  left:50%; /* centers the loading animation horizontally one the screen */
-  top:50%; /* centers the loading animation vertically one the screen */
-  background-image:url(../img/status.gif); /* path to your loading animation */
+  left:50%;
+  top:50%;
+  background-image:url(../img/status.gif); 
   background-repeat:no-repeat;
   background-position:center;
-  margin:-20px 0 0 -100px; /* is width and height divided by two */
+  margin:-20px 0 0 -100px; 
 }
-
+/* God damnit you fucking webkit motherfuckers making my buttons look like shit fuck you */
+input[type="submit"] {
+  -webkit-appearance: none;
+}
 /* Mobile Version Babay */
 @media only screen and (max-device-width: 480px) {
   body {
