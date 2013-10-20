@@ -11,13 +11,5 @@ $(function() {
 
 $(window).load(function() { 
   $("#status").fadeOut();
-  $("#preloader").delay(350).fadeOut("slow");
-})
-
-$( document ).ready(function() {
-    console.log( "Document Ready" );
-});
-
-$(window).load(function() { 
-  console.log( "Window Ready" );
+  $("#preloader").delay(350).fadeOut(3500, "linear");
 })

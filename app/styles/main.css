@@ -120,7 +120,8 @@ hr {
   left:0;
   right:0;
   bottom:0;
-  background-color:#fff; 
+  background-color:#FFF; 
+  z-index: 999999;
 }
 #status {
   width:200px;
