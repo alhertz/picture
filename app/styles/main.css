@@ -115,6 +115,7 @@ hr {
 .download .social {
   float: left;
   margin-top: .5em;
+  margin-right: .5em;
 }
 .controls {
   position: absolute;
@@ -134,7 +135,7 @@ hr {
 .controls a:last-child {
   padding: 0;
 }
-#play, #pause, #download {
+#play, #pause, #download, #site {
   margin-top: .25em;
 }
 .controls a:hover {
