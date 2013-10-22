@@ -1,0 +1,75 @@
+canvas {
+  position: absolute; 
+  width: 100%; 
+  height: 100%; 
+  overflow: hidden;
+}
+#loading {
+  color: #FFF;
+  height: 60px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -30px;
+  text-decoration: none;
+  line-height: 60px;
+  text-align: center;
+  text-transform: uppercase; 
+  letter-spacing: 4px;
+  font-size: 2.0em;
+  z-index: 999999;
+}
+#loading a {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: -100px;
+  line-height: 200px;
+  color: #FFF;
+  background: #222;
+  border-radius: 50%;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase; 
+  font-weight: 700;
+}
+#loading a:hover {
+  color: #FFF;
+  background: #000;
+}
+#play, #pause {
+  display: none;
+}
+#waveform { 
+  display: block;
+  margin: 0 auto;
+}
+#info {
+  bottom: 0;
+  right: 0;
+  max-width: 400px;
+  position: absolute;
+  margin: 2.0em;
+  z-index: 9999;
+}
+#info span {
+  font-weight: normal;
+}
+#info span, #info h3 {
+  color: #FFF;
+  font-size: 12px;
+  margin: 5px 30px 5px 30px;
+  padding: 0;
+}
+#info a {
+  color: #CCC;
+  text-decoration: none;
+}
+#info a:hover {
+  color: #999;
+}
