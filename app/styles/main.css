@@ -19,6 +19,18 @@ a {
 }
 a:hover {
   color: #555;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+:hover {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 p {
   margin-bottom: 2.0em;
@@ -71,25 +83,24 @@ hr {
   width: 100%;
 }
 .static {
-  background: url('http://designbyah.com/inthegarage/sharksteeth/images/static.gif');
+  background: url('../images/static.gif');
   position: absolute;
   width: 100%;
   height: 100%;
   opacity: .05;
 }
-.countdown {
+.title, .countdown {
   color: #FFF;
   background: #222;
-  text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: bold;
+  line-height: 60px;
   list-style: none;
   padding: 0;
   margin: 0;
   border: 1px solid #222;
   position: absolute;
+  text-align: center;
   width: 100%;
-  float: left;
 }
 .countdown li {
   width: 25%;
@@ -98,20 +109,37 @@ hr {
   text-align: center;
   float: left;
 }
-.social {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 0 0 1.0em 0;
+.download iframe {
+  width: 80px !important;
 }
-.download {
+.download .social {
+  float: left;
+  margin-top: .5em;
+}
+.controls {
   position: absolute;
   bottom: 0;
   left: 0;
-  margin: 0 0 1.0em 1.0em;
+  margin: 1.0em;
+  background: #222;
+  padding: .5em 1.5em;
+  float: left;
 }
-.download p {
-  margin: 0;
+.controls a {
+  color: #FFF;
+  float: left;
+  text-decoration: none;
+  padding: 0 1.0em 0 0;
+}
+.controls a:last-child {
+  padding: 0;
+}
+#play, #pause, #download {
+  margin-top: .25em;
+}
+.controls a:hover {
+  opacity: .7;
+  cursor: pointer;
 }
 /* Preload that shit */
 #preloader {
@@ -130,7 +158,7 @@ hr {
   position:absolute;
   left:50%;
   top:50%;
-  background-image:url(../img/status.gif); 
+  background-image:url(../img/loading.gif); 
   background-repeat:no-repeat;
   background-position:center;
   margin:-20px 0 0 -100px; 
