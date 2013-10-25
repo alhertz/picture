@@ -77,11 +77,6 @@ hr {
   background: #000;
   color: #FFF;
 }
-.button.full-width {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
 .static {
   background: url('../images/static.gif');
   position: absolute;
@@ -89,7 +84,7 @@ hr {
   height: 100%;
   opacity: .05;
 }
-.title, .countdown {
+.title {
   color: #FFF;
   background: #222;
   letter-spacing: 1px;
@@ -101,13 +96,6 @@ hr {
   position: absolute;
   text-align: center;
   width: 100%;
-}
-.countdown li {
-  width: 25%;
-  border: 0px solid #222;
-  line-height: 40px;
-  text-align: center;
-  float: left;
 }
 .download iframe {
   width: 80px !important;
@@ -183,17 +171,18 @@ input[type="submit"] {
     top: 0;
     left: 0;
   }
-  .download,.static {
+  .title, .download,.static {
     display: none;
   }
-  .countdown {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  .social {
+  .controls {
     position: relative;
-    width: 100px;
-    margin: 0 auto;
+    width: 100%;
+  }
+  .controls a {
+    display: block;
+    text-align: center;
+  }
+  .controls .social {
+    float: none;
   }
 }
